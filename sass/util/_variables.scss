@@ -1,0 +1,48 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	color: var(--contacts-color);
+}
+
+:root {
+	--brand-color: #2196F3;
+	--text-color-N1: #212121;
+	--contacts-color: #757575;
+	--hero-color:#2F303A;
+	--text-color-N2: #FFFFFF;
+	--btn-portfolio: #F5F4FA;
+	--cubik: cubic-bezier(0.4, 0, 0.2, 1);
+
+  }
+
+.container{
+	width: 1200px;
+	box-sizing: border-box;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+
+}
+
+.section-padding{
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.flex{
+	display: flex;
+	align-items: center;
+}
+
+.hide{
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+}

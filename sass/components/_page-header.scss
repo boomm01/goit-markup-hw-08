@@ -1,0 +1,148 @@
+.header-border{
+	border-bottom: 1px solid #ECECEC;
+}
+
+
+.logo{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	text-decoration: none;
+	color: var(--text-color-N1);
+	transition: color 250ms var(--cubik);
+}
+
+.header__logo{
+	margin-right: 93px;
+}
+
+.logo:focus,
+.logo:hover{
+	color: var(--brand-color);
+}
+
+.logo__span{
+	color: var(--brand-color);
+}
+
+.burger{
+	@media screen and (max-width:76px){}
+}
+
+.header__navigation{
+	margin-right: auto;
+}
+
+.navidation{
+	@media screen and (min-width:768px){
+		display: none;
+	}
+}
+
+.menu{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+}
+
+.menu__item:not(:last-child){
+	 margin-right: 50px; 
+}
+
+
+
+.menu__link{
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: var(--text-color-N1);
+	text-decoration: none;
+	padding: 32px 0px;
+	display: block;
+	transition: color 250ms var(--cubik);
+	position: relative;
+}
+
+.active{
+	color: var(--brand-color)
+}
+
+.current::after{
+	content: "";
+	height: 4px;
+	background-color: var(--brand-color);
+	border-radius: 2px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.menu__link:focus,
+.menu__link:hover{
+	color: var(--brand-color);
+}
+
+.menu__link:active{
+	color: var(--brand-color);
+}
+
+
+.menu-mobile{
+
+	@media screen and (min-width: 768px){
+		display: flex;
+    	align-items: center;
+    	justify-content: space-between;
+    	flex-grow: 1;
+		}
+	}
+
+
+
+.header__contacts{
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+
+}
+
+
+.contacts__items:not(:last-child){
+	margin-right: 50px;
+}
+
+.contacts__link{
+	text-decoration: none;
+	color: var(--contacts-color);
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	padding: 32px 0px;
+	display: flex;
+	align-items: center;
+	transition: color 250ms var(--cubik);
+}
+
+.contacts__link:hover,
+.contacts__link:focus{
+	color: var(--brand-color);
+}
+
+.hcontacts__link:active{
+	color:var(--brand-color);
+}
+
+.contacts__icon{
+	margin-right: 10px;
+	fill: currentColor;
+}

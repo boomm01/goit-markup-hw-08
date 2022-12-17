@@ -1,0 +1,228 @@
+.backdrop{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	position: fixed;
+	top: 0;
+	transition: opacity 250ms var(--cubik), visibility 250ms var(--cubik);
+}
+
+.modal{
+	width: 528px;
+	min-height: 581px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(1) rotate(0deg);
+	transition: transform 250ms var(--cubik);
+	padding: 40px;
+	
+}
+
+.backdrop.is-hidden .modal{
+	transform: translate(-50%, -50%) scale(2) rotate(360deg);
+}
+
+.modal-button{
+	position: absolute;
+	right: 8px;
+	top: 8px;
+	width: 30px;
+	height: 30px;
+	background-color: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: color 250ms var(--cubik);
+
+}
+
+.modal-button:hover .modal-icon,
+.modal-button:focus .modal-icon{
+	color:var(--brand-color);
+}
+
+.modal-button{
+	fill: currentColor;
+}
+
+.modal-titel{
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.15;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--text-color-N1);
+	margin-bottom: 30px;
+}
+
+.modal-field{
+	margin-bottom: 10px;
+}
+
+.modal-field:last-child{
+	margin-bottom: 0px;
+}
+
+.modal-form-label{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.15;
+	letter-spacing: 0.01em;
+	display: block;
+	color: var(--contacts-color);
+	margin-bottom: 4px;
+}
+
+.modal-form-wrapper{
+	position: relative;
+}
+
+.modal-input{
+	width: 100%;
+	height: 40px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	background-color: transparent;
+	outline: transparent;
+	padding-left: 42px;
+	transition:  border 250ms var(--cubik), border 250ms var(--cubik);
+
+}
+
+.modal-input:hover .modal-form-icon,
+.modal-input:focus .modal-form-icon{
+	color: var(--brand-color);
+}
+
+.modal-input:focus,
+.modal-input:hover{
+	border-color: var(--brand-color);
+}
+
+.modal-input:focus + .modal-form-icon,
+.modal-input:hover + .modal-form-icon{
+	fill: var(--brand-color);
+}
+
+
+.modal-input::placeholder{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.15;
+	letter-spacing: 0.01em;
+	color: var(--contacts-color);
+}
+
+
+.modal-form-icon{
+	position: absolute;
+	left: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.modal-field-comment{
+	width: 100%;
+	height: 120px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.15;
+	letter-spacing: 0.01em;
+	background-color: transparent;
+	outline: transparent;
+	resize: none;
+	padding: 12px 16px;
+	margin-bottom: 10px;
+
+}
+
+
+
+.is-hidden{
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+
+}
+
+.position{
+	position: relative;
+}
+
+.modal-check{
+	position: absolute;
+	top: 15px;
+	left: 27px;
+	transition: color 250ms var(--cubik);
+}
+
+.check-text{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.714;
+	letter-spacing: 0.03em;
+	color: var(--contacts-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.check-text span {
+	width: 16px;
+	height: 15px;
+	border: 2px solid var(--text-color-N1);
+	margin-right: 8px;
+	border-radius:  2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	fill: transparent;
+}
+
+.modal-check:checked + .check-text span{
+	background-color: var(--brand-color);
+	border: none;
+	fill: #FFFFFF;
+}
+
+.modal-check-polyti{
+	font-family: inherit;
+	color: var(--brand-color);
+	margin-left: 5px;
+}
+
+.modal-form-button{	
+	font-family: inherit;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 30px;
+	width: 200px;
+	height: 50px;
+	color: var(--text-color-N2);
+	background-color: var(--brand-color);
+	border: 0;
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin: 0 auto;
+	padding: 10px 32px;
+}
