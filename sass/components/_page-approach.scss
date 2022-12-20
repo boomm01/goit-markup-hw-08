@@ -4,9 +4,12 @@
 }
 	&__list{
 		display: flex;
-		flex-wrap: wrap;
 		gap: 30px;
 
+		@media screen and (min-width: 480px){
+			
+			flex-wrap: wrap;
+		}
 	 }	
 }
  
@@ -15,8 +18,10 @@
 	&__items{
 	display: block;
 	width: 100%;
-
-	
+		
+	@media screen and (min-width:480){
+		flex-basis: calc((100% - 90px) / 4);
+	}
 }
 	&__box{
 		width: 270px;
@@ -26,6 +31,11 @@
 		justify-content: center;
 		align-items: center;
 		margin-bottom: 30px;
+
+		@media screen and (min-width:480px){
+			max-width: 450px;
+			width: 100%;
+		}
 	}
 	&__titel{
 		font-style: normal;

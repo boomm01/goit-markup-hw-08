@@ -527,13 +527,22 @@ body {
 }
 .approach__list {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (min-width: 480px) {
+  .approach__list {
+    flex-wrap: wrap;
+  }
 }
 
 .skill__items {
   display: block;
   width: 100%;
+}
+@media screen and (min-width: 480) {
+  .skill__items {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 .skill__box {
   width: 270px;
@@ -543,6 +552,12 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .skill__box {
+    max-width: 450px;
+    width: 100%;
+  }
 }
 .skill__titel {
   font-style: normal;
@@ -561,6 +576,12 @@ body {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--contacts-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .employment {
+    display: none;
+  }
 }
 
 .employment {
