@@ -1,48 +1,43 @@
-.client-titel{
-	font-style: normal;
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 42px;
-	text-align: center;
-	letter-spacing: 0.03em;
-	color: var(--text-color-N1);
-	margin-bottom: 50px;
+.client{
+	&__title{
+		font-style: normal;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 42px;
+		text-align: center;
+		letter-spacing: 0.03em;
+		color: var(--text-color-N1);
+		margin-bottom: 50px;
+}
+	&__list{
+		display: flex;
+		gap: 30px;
+	}	
 }
 
-.client-list{
-	display: flex;
-	gap: 30px;
-
+.friends{
+	&__items{
+		width: 170px;
+		height: 92px;
+	}
+	&__link{
+		border: 1px solid #AFB1B8;
+		border-radius: 4px;
+		width: 100%;
+		height: 100%;
+		color: #AFB1B8;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: color 250ms var(--cubik);
+	}
+	&__link:hover,
+	&__link:focus{
+		border-color: var(--brand-color);
+		color: var(--brand-color)
+	}
+	&__icon{
+		fill: currentColor;
+	}
 }
 
-.client-list-items{
-	width: 170px;
-	height: 92px;
-
-}
-
-.client-list-link{
-	border: 1px solid #AFB1B8;
-	border-radius: 4px;
-	width: 100%;
-	height: 100%;
-	color: #AFB1B8;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transition: color 250ms var(--cubik);
-
-	
-}
-
-.client-list-link:hover,
-.client-list-link:focus{
-	border-color: var(--brand-color);
-	color: var(--brand-color)
-}
-
-
-
-.client-list-icon{
-    fill: currentColor;
-}
