@@ -372,9 +372,13 @@ body {
 }
 
 .menu {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    gap: 50px;
+  }
 }
 .menu__item:not(:last-child) {
   margin-right: 50px;
