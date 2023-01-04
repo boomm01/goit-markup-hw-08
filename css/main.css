@@ -315,29 +315,6 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 }
-@media screen and (max-width: 479px) {
-  .container {
-    width: 100vw;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
 
 .section-padding {
   padding-top: 94px;
@@ -370,28 +347,8 @@ body {
 .header__logo {
   margin-right: 93px;
 }
-@media screen and (max-width: 767px) {
-  .header__logo {
-    margin: 16px 15px;
-  }
-}
 .header__navigation {
   margin-right: auto;
-}
-@media screen and (max-width: 767px) {
-  .header__navigation {
-    display: none;
-  }
-}
-.header__contacts {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-}
-@media screen and (max-width: 767px) {
-  .header__contacts {
-    display: none;
-  }
 }
 
 .logo {
@@ -456,6 +413,12 @@ body {
   left: 0px;
   margin: 0 auto;
   width: 100%;
+}
+
+.header__contacts {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
 }
 
 .contacts__items:not(:last-child) {
@@ -529,20 +492,10 @@ body {
   display: flex;
   gap: 30px;
 }
-@media screen and (min-width: 480px) {
-  .approach__list {
-    flex-wrap: wrap;
-  }
-}
 
 .skill__items {
-  display: block;
-  width: 100%;
-}
-@media screen and (min-width: 480) {
-  .skill__items {
-    flex-basis: calc((100% - 90px) / 4);
-  }
+  list-style-type: none;
+  width: 270px;
 }
 .skill__box {
   width: 270px;
@@ -552,12 +505,6 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-}
-@media screen and (min-width: 480px) {
-  .skill__box {
-    max-width: 450px;
-    width: 100%;
-  }
 }
 .skill__titel {
   font-style: normal;
@@ -576,12 +523,6 @@ body {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--contacts-color);
-}
-
-@media screen and (max-width: 1200px) {
-  .employment {
-    display: none;
-  }
 }
 
 .employment {
