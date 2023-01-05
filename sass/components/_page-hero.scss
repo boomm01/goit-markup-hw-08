@@ -1,18 +1,57 @@
 .hero{
-	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heto-background.jpg);
-	padding-top: 200px;
-	padding-bottom: 200px;
-	max-width: 1600px;
-	margin: 0 auto;
+	max-width: 480px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobx1);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 118px 0px;
+	
+	@include retina {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob2x.jpg);
+    }
+
+    @media screen and (min-width: 481px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tabl1x.jpg);
+        
+        @include retina {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tabl2x.jpg);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        
+
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desctop1x.jpg);
+        
+        @include retina {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desctop2x.jpg);
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        height: 600px;       
+        padding: 200px 0px;
+    }  
+
 	&__titel{
-		font-style: normal;
 		font-weight: 900;
-		font-size: 44px;
-		line-height: 1.36;
-		color: var(--text-color-N2);
-		text-align: center;
-		text-transform: uppercase;
-		margin-bottom:30px;   
+    	font-size: 26px;
+    	line-height: calc(42 / 26);
+    	text-align: center;
+    	letter-spacing: 0.06em;
+    	text-transform: uppercase;
+    	margin-bottom: 30px;
+		color: var(--text-color-N2);  
+
+		@media screen and (min-width: 1200px) {
+			font-size: 44px;
+			line-height: calc(60 / 44);
+		}
 	}
 	&__btn{
 		font-family: inherit;
