@@ -14,8 +14,15 @@
  
 .skill{
 	&__items{
-	list-style-type: none;
-	width: 270px;
+	width: 100%;   
+        
+	@media screen and (min-width: 768px) {
+			width: calc((100% - 30px) / 2);
+		}
+		
+	@media screen and (min-width: 1200px) {
+			width: calc((100% - 90px) / 4);
+		}
 }
 	&__box{
 		width: 270px;
@@ -27,14 +34,17 @@
 		margin-bottom: 30px;
 	}
 	&__titel{
-		font-style: normal;
 		font-weight: 700;
 		font-size: 14px;
-		line-height: 1.875;
+		line-height: 1.14;
 		letter-spacing: 0.03em;
 		text-transform: uppercase;
 		color: var(--text-color-N1);
 		margin-bottom: 10px;
+		
+		@media screen and (max-width: 767px) {
+			text-align: center;
+			}
 	}
 	&__text{
 		font-style: normal;
