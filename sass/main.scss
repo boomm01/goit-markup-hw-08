@@ -1,13 +1,21 @@
+@import './utils/vars';
+@import './base/reset';
+@import './utils/hide';
+@import './utils/mixins';
+@import './base/common';
 
-@import './util/reset';
-@import './util/modern-normalize';
-@import './util/variables';
-@import './components/page-header';
-@import './components/page-hero';
-@import './components/page-approach';
-@import './components/page-employment';
-@import './components/page-team';
-@import './components/page-client';
-@import './components/page-footer';
-@import './components/page-portfolio';
-@import './components/page-modal';
+
+@import './components/container';
+@import './components/section';
+@import './components/modal';
+@import './components/logo';
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/feature';
+@import './layouts/work';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/filter';
+@import './layouts/portfolio';
+@import './layouts/footer';

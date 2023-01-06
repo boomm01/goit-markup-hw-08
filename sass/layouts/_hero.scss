@@ -1,0 +1,83 @@
+.hero {
+    max-width: 480px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-image: var(--gradient),
+        url(../images/mob-hero-1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 118px 0px;
+
+    @include retina {
+        background-image: var(--gradient), url(../images/mob-hero-2x.jpg);
+    }
+
+    @media screen and (min-width: 481px) {
+        background-image: var(--gradient), url(../images/tablet-hero-1x.jpg);
+        
+        @include retina {
+            background-image: var(--gradient), url(../images/tablet-hero-2x.jpg);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        
+
+        background-image: var(--gradient), url(../images/desktop-hero-1x.jpg);
+        
+        @include retina {
+            background-image: var(--gradient), url(../images/desktop-hero-2x.jpg);
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        height: 600px;       
+        padding: 200px 0px;
+    }  
+}
+
+.hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: calc(42 / 26);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: calc(60 / 44);
+    }
+}
+
+.hero__btn {
+    background: #2196F3;
+    border-radius: 4px;
+    border: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 32px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+
