@@ -14,12 +14,12 @@
 	<header class="header">
 		<div class="container header__container">
 		  <a href="./index.html" class="logo header__logo"
-			>Web<span class="logo-studio--dark">Studio</span>
+			>Web<span class="logo-studio">Studio</span>
 		  </a>
 		  <nav class="navigation">
 			<ul class="menu">
-			  <li class="menu__item"><a class="menu__link" href="./index.html"> Студія</a></li>
-			  <li class="menu__item">
+			  <li class="menu__item"><a class="menu__link " href="./index.html"> Студія</a></li>
+			  <li class="menu__item ">
 				<a class="menu__link activ" href="./portfolio.html">Портфоліо</a>
 			  </li>
 			  <li class="menu__item"><a class="menu__link" href="#">Контакти</a></li>
@@ -30,30 +30,29 @@
 			<li class="contacts__item">
 			  <a class="contacts__link" href="mailto:info@devstudio.com">
 				<svg class="contacts__mail-icon" width="16" height="12">
-				  <use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com
+				  <use href="./images/symbol-defs.svg#icon-envelope-1"></use></svg>info@devstudio.com
 			  </a>
 			</li>
 			<li class="contacts__item">
 			  <a class="contacts__link" href="tel:+380961111111">
 				<svg class="contacts__smartphone-icon" width="10" height="16">
-				  <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11
+				  <use href="./images/symbol-defs.svg#icon-smartphone-1"></use></svg>+38 096 111 11 11
 			  </a>
 			</li>
 		  </ul>
-		  <button type="button" class="menu-open" data-menu-open>
+		  <button type="button" class="menu-open js-open-menu" >
 			<svg class="menu-open-icon" width="40" height="40">
-			  <use href="./images/icons.svg#icon-menu-mob"></use>
+			  <use href="./images/symbol-defs.svg#icon-menu"></use>
 			</svg>
 		  </button>
 		</div>
   
   
-		<div class="mob-menu mob-menu--portfolio is-hidden" data-menu>
-		  <div class="wrapper">
+		<div class="js-menu-container" >
 			<div class="mob-menu-top">
-			  <button type="button" class="menu-close-btn" data-menu-close-btn>
+			  <button type="button" class="menu-close-btn js-close-menu" >
 				<svg class="menu-close-icon" width="40" height="40">
-				  <use href="./images/icons.svg#icon-close-mob"></use>
+				  <use href="./images/symbol-defs.svg#icon-close"></use>
 				</svg>
 			  </button>
 			  <nav class="mob-navigation">
@@ -124,7 +123,6 @@
 				</li>
 			  </ul>
 			</div>
-		  </div>
 		</div>
 	  </header>
 		<main>
@@ -142,7 +140,27 @@
 						<li class="propos__items">
 							<a class="propos__link" href="#">
 								<div class="propos__wrap">
-									<img class="propos__img" src="./images/img-1.jpg" alt="leptop" width="370" height="294">
+									<picture class="project-image">
+										<source
+										  srcset="
+											./images/portfolio-decs1-1x.jpg 1x,
+											./images/portfolio-decs1-2x.jpg 2x"
+										  media="(min-width: 1200px)"
+										/>
+										<source
+										  srcset="
+											./images/portfolio-tabl1-1x.jpg 1x, 
+											./images/portfolio-tabl1-2x.jpg 2x"
+										  media="(min-width: 768px)"
+										/>
+										<source
+										  srcset="
+											./images/portfolio-mob1-1x.jpg 1x, 
+											./images/portfolio-mob1-2x.jpg 2x"
+										  media="(max-width: 767px)"
+										/>
+										<img src="./images/portfolio-mob1-1x.jpg" alt="project1" width="450" />
+									  </picture>
 									<p class="propos__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
 								</div>
 								<div class="block propos__text-padding">
@@ -154,7 +172,27 @@
 						<li class="propos__items">
 							<a class="propos__link" href="#">
 								<div class="propos__wrap">
-									<img class="propos__img" src="./images/img-2.jpg" alt="leptop" width="370" height="294">
+									<picture class="project-image">
+										<source
+										  srcset="
+											./images/portfolio-decs2-1x.jpg 1x,
+											./images/portfolio-decs2-2x.jpg 2x"
+										  media="(min-width: 1200px)"
+										/>
+										<source
+										  srcset="
+											./images/portfolio-tabl2-1x.jpg 1x, 
+											./images/portfolio-tabl2-2x.jpg 2x"
+										  media="(min-width: 768px)"
+										/>
+										<source
+										  srcset="
+											./images/portfolio-mob2-1x.jpg 1x, 
+											./images/portfolio-mob2-2x.jpg 2x"
+										  media="(max-width: 767px)"
+										/>
+										<img src="./images/portfolio-mob2-1x.jpg" alt="project2" width="450" />
+									  </picture>
 									<p class="propos__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
 								</div>
 								<div class="block propos__text-padding">
@@ -166,7 +204,27 @@
 						<li class="propos__items">
 							<a class="propos__link" href="#">
 								<div class="propos__wrap">
-									<img class="propos__img" src="./images/img-3.jpg" alt="leptop" width="370" height="294">
+									<picture class="project-image">
+										<source
+										  srcset="
+											./images/portfolio-decs3-1x.jpg 1x,
+											./images/portfolio-decs3-2x.jpg 2x"
+										  media="(min-width: 1200px)"
+										/>
+										<source
+										  srcset="
+											./images/portfolio-tabl3-1x.jpg 1x, 
+											./images/portfolio-tabl3-2x.jpg 2x"
+										  media="(min-width: 768px)"
+										/>
+										<source
+										  srcset="
+											./images/portfolio-mob3-1x.jpg 1x, 
+											./images/portfolio-mob3-2x.jpg 2x"
+										  media="(max-width: 767px)"
+										/>
+										<img src="./images/portfolio-mob3-1x.jpg" alt="project3" width="450" />
+									  </picture>
 									<p class="propos__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
 								</div>
 								<div class="block propos__text-padding">
@@ -178,7 +236,27 @@
 						<li class="propos__items">
 							<a class="propos__link" href="#">
 								<div class="propos__wrap">
-									<img class="propos__img" src="./images/img-4.jpg" alt="leptop" width="370" height="294">
+									<picture class="project-image">
+										<source
+										  srcset="
+											./images/portfolio-decs4-1x.jpg 1x,
+											./images/portfolio-decs4-2x.jpg 2x"
+										  media="(min-width: 1200px)"
+										/>
+										<source
+										  srcset="
+											./images/portfolio-tabl4-1x.jpg 1x, 
+											./images/portfolio-tabl4-2x.jpg 2x"
+										  media="(min-width: 768px)"
+										/>
+										<source
+										  srcset="
+											./images/portfolio-mob4-1x.jpg 1x, 
+											./images/portfolio-mob4-2x.jpg 2x"
+										  media="(max-width: 767px)"
+										/>
+										<img src="./images/portfolio-mob4-1x.jpg" alt="project4" width="450" />
+									  </picture>
 									<p class="propos__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
 								</div>
 								<div class="block propos__text-padding">
@@ -190,7 +268,27 @@
 						<li class="propos__items">
 							<a class="propos__link" href="#">
 								<div class="propos__wrap">
-									<img class="propos__img" src="./images/img-5.jpg" alt="leptop" width="370" height="294">
+									<picture class="project-image">
+										<source
+										  srcset="
+											./images/portfolio-decs5-1x.jpg 1x,
+											./images/portfolio-decs5-2x.jpg 2x"
+										  media="(min-width: 1200px)"
+										/>
+										<source
+										  srcset="
+											./images/portfolio-tabl5-1x.jpg 1x, 
+											./images/portfolio-tabl5-2x.jpg 2x"
+										  media="(min-width: 768px)"
+										/>
+										<source
+										  srcset="
+											./images/portfolio-mob5-1x.jpg 1x, 
+											./images/portfolio-mob5-2x.jpg 2x"
+										  media="(max-width: 767px)"
+										/>
+										<img src="./images/portfolio-mob5-1x.jpg" alt="project5" width="450" />
+									  </picture>
 									<p class="propos__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
 								</div>
 								<div class="block propos__text-padding">
@@ -202,7 +300,27 @@
 						<li class="propos__items">
 							<a class="propos__link" href="#">
 								<div class="propos__wrap">
-									<img class="propos__img" src="./images/img-6.jpg" alt="leptop" width="370" height="294">
+									<picture class="project-image">
+										<source
+										  srcset="
+											./images/portfolio-decs6-1x.jpg 1x,
+											./images/portfolio-decs6-2x.jpg 2x"
+										  media="(min-width: 1200px)"
+										/>
+										<source
+										  srcset="
+											./images/portfolio-tabl6-1x.jpg 1x, 
+											./images/portfolio-tabl6-2x.jpg 2x"
+										  media="(min-width: 768px)"
+										/>
+										<source
+										  srcset="
+											./images/portfolio-mob6-1x.jpg 1x, 
+											./images/portfolio-mob6-2x.jpg 2x"
+										  media="(max-width: 767px)"
+										/>
+										<img src="./images/portfolio-mob6-1x.jpg" alt="project6" width="450" />
+									  </picture>
 									<p class="propos__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
 								</div>
 								<div class="block propos__text-padding">
@@ -214,7 +332,27 @@
 						<li class="propos__items">
 							<a class="propos__link" href="#">
 								<div class="propos__wrap">
-									<img class="propos__img" src="./images/img-7.jpg" alt="leptop" width="370" height="294">
+									<picture class="project-image">
+										<source
+										  srcset="
+											./images/portfolio-decs7-1x.jpg 1x,
+											./images/portfolio-decs7-2x.jpg 2x"
+										  media="(min-width: 1200px)"
+										/>
+										<source
+										  srcset="
+											./images/portfolio-tabl7-1x.jpg 1x, 
+											./images/portfolio-tabl7-2x.jpg 2x"
+										  media="(min-width: 768px)"
+										/>
+										<source
+										  srcset="
+											./images/portfolio-mob7-1x.jpg 1x, 
+											./images/portfolio-mob7-2x.jpg 2x"
+										  media="(max-width: 767px)"
+										/>
+										<img src="./images/portfolio-mob7-1x.jpg" alt="project7" width="450" />
+									  </picture>
 									<p class="propos__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
 								</div>
 								<div class="block propos__text-padding">
@@ -226,7 +364,27 @@
 						<li class="propos__items">
 							<a class="propos__link" href="#">
 								<div class="propos__wrap">
-									<img class="propos__img" src="./images/img-8.jpg" alt="leptop" width="370" height="294">
+									<picture class="project-image">
+										<source
+										  srcset="
+											./images/portfolio-decs8-1x.jpg 1x,
+											./images/portfolio-decs8-2x.jpg 2x"
+										  media="(min-width: 1200px)"
+										/>
+										<source
+										  srcset="
+											./images/portfolio-tabl8-1x.jpg 1x, 
+											./images/portfolio-tabl8-2x.jpg 2x"
+										  media="(min-width: 768px)"
+										/>
+										<source
+										  srcset="
+											./images/portfolio-mob8-1x.jpg 1x, 
+											./images/portfolio-mob8-2x.jpg 2x"
+										  media="(max-width: 767px)"
+										/>
+										<img src="./images/portfolio-mob8-1x.jpg" alt="project8" width="450" />
+									  </picture>
 									<p class="propos__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
 								</div>
 								<div class="block propos__text-padding">
@@ -238,7 +396,27 @@
 						<li class="propos__items">
 							<a class="propos__link" href="#">
 								<div class="propos__wrap">
-									<img class="propos__img" src="./images/img-9.jpg" alt="leptop" width="370" height="294">
+									<picture class="project-image">
+										<source
+										  srcset="
+											./images/portfolio-decs9-1x.jpg 1x,
+											./images/portfolio-decs9-2x.jpg 2x"
+										  media="(min-width: 1200px)"
+										/>
+										<source
+										  srcset="
+											./images/portfolio-tabl9-1x.jpg 1x, 
+											./images/portfolio-tabl9-2x.jpg 2x"
+										  media="(min-width: 768px)"
+										/>
+										<source
+										  srcset="
+											./images/portfolio-mob9-1x.jpg 1x, 
+											./images/portfolio-mob9-2x.jpg 2x"
+										  media="(max-width: 767px)"
+										/>
+										<img src="./images/portfolio-mob9-1x.jpg" alt="project9" width="450" />
+									  </picture>
 									<p class="propos__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
 								</div>
 								<div class="block propos__text-padding">

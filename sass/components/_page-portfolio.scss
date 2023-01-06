@@ -49,6 +49,14 @@
 		width: 370px;	
 		background: #FFFFFF;
 		border: 1px solid #EEEEEE;
+		
+		@media screen and (min-width: 768px) {
+			width: calc((100% - 30px) / 2);
+		}   
+	
+		@media screen and (min-width: 1200px) {
+			width: calc((100% - 60px) / 3);
+		}
 	}
 	&__link{
 		text-decoration: none;
